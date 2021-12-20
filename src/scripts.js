@@ -10,6 +10,12 @@ $(document).ready(function() {
     console.log('inventory in loader: ', inventory);
 });
 
+function skidoUnlock(){
+    if(inventory.includes("keyFragment1") && inventory.includes("keyFragment2") && inventory.includes("keyFragment3")){
+        addItem('paper');
+    }
+}
+
 function loadInventory() {
     $('#inventory').empty();
     let inventory = localStorage.getItem('inventory')
