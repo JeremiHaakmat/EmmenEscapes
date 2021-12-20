@@ -96,7 +96,7 @@ body {
 .modal {
     display: none;
     /* Hidden by default */
-    position: fixed;
+    position: absolute;
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
@@ -122,7 +122,6 @@ body {
 .modal-content {
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 80%;
 }
 
@@ -134,7 +133,7 @@ body {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    border-color: rgb(0, 0, 0, 0);
+    border-color: rgb(0, 0, 0, 1);
 }
 
 .close:hover,
@@ -196,4 +195,10 @@ body {
 .tile9 {
     background: white;
     cursor: default;
+}
+
+#sliderContent {
+    position: absolute;
+    left: 45vw;
+    outline: none;
 }

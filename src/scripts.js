@@ -237,7 +237,14 @@ function closethisshit(id) {
         document.getElementById("sliderContainer").style.display = "none";
     }
 }
-
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == document.getElementById("numberpadContainer")) {
+        document.getElementById("numberpadContainer").style.display = "none";
+    } else if (event.target == document.getElementById("sliderContainer")) {
+        document.getElementById("sliderContainer").style.display = "none";
+    } else {}
+}
 
 
 function passwordChecker() {

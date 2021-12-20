@@ -60,8 +60,8 @@ body {
     /* Sit on top */
     padding-top: 100px;
     /* Location of the box */
-    left: 0;
-    top: 0;
+    left: 50vw;
+    top: 50vh;
     width: 100%;
     /* Full width */
     height: 100%;
